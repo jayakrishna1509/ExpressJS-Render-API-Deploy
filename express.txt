@@ -1,0 +1,12 @@
+var express = require("express");
+var app = express();
+app.get("/", async (req, res) => {
+  const data = await fetch("https://fakestoreapi.com/products");
+  const data_json = await data.json();
+  res.send(data_json);
+});
+
+// start the server
+app.listen(3007, () => {
+  console.log("Server is running on port 3007");
+});
