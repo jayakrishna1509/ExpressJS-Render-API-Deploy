@@ -1,8 +1,8 @@
 var express = require("express");
 // var fetch = require("node-fetch");
 var app = express();
-// app.get("/", async (req, res) => {
-app.get("/products", async (req, res) => {
+app.get("/", async (req, res) => {
+  // app.get("/products", async (req, res) => {
   const data = await fetch("https://fakestoreapi.com/products");
   const data_json = await data.json();
   //   res.send(data_json);
