@@ -43,7 +43,7 @@ app.listen(3007, () => {
 });
 
 // check the server
-// http://localhost:3007/products?category=men
-// http://localhost:3007/products?category=women
-// http://localhost:3007/products?category=jewelery
-// http://localhost:3007/products?category=electronics
+// http://localhost:3007/?category=men
+// http://localhost:3007/?category=women
+// http://localhost:3007/?category=jewelery
+// http://localhost:3007/?category=electronics
